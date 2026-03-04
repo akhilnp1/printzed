@@ -6,8 +6,12 @@ SECRET_KEY = 'django-insecure-change-this-in-production-xyz123'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = [
+    'printzed-backend.onrender.com',
+    'printzed-project.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
