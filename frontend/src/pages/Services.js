@@ -37,11 +37,11 @@ function Services() {
                 <h3>{s.title}</h3>
                 <p>{s.description}</p>
               </div>
-              {s.image
-                ? <img src={`${MEDIA_URL}${s.image}`} alt={s.title} className="service-img" />
-                : <div className="service-img-placeholder" />
-              }
-            </div>
+                {s.image
+                  ? <img src={s.image} alt={s.title} className="service-img" />
+                  : <div className="service-img-placeholder" />
+                }
+              </div>
           ))}
         </div>
       </div>
