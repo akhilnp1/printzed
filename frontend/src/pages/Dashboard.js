@@ -183,16 +183,22 @@ function Dashboard() {
                   onChange={e => setSvcForm({ ...svcForm, image: e.target.files[0] })} />
                 {editSvcId && <span className="file-hint">Leave empty to keep existing image</span>}
               </div>
-              <button className="dash-btn" onClick={handleSaveService}>
-                {editSvcId ? '💾 Save Changes' : '+ Add Service'}
-              </button>
+              <button
+              className="dash-btn"
+              onClick={(e) => {
+                e.preventDefault();
+                handleSaveService();
+              }}
+            >
+              {editSvcId ? '💾 Save Changes' : '+ Add Service'}
+            </button>
             </div>
 
             <h2>Existing Services</h2>
             <div className="dash-list">
               {services.map(s => (
                 <div className={`dash-item ${editSvcId === s.id ? 'editing' : ''}`} key={s.id}>
-                  {s.image && <img src={`${MEDIA_URL}${s.image}`} alt={s.title} />}
+                  <img src={s.image} alt={s.title} />
                   <div className="dash-item-info">
                     <h4>{s.title}</h4>
                     <p>{s.description}</p>
