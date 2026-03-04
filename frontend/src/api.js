@@ -1,9 +1,10 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:8000/api',
+  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:8000/api',
 });
 
+// export const MEDIA_URL = process.env.REACT_APP_MEDIA_URL || 'http://localhost:8000';
 export const MEDIA_URL = '';
 
 // Services
