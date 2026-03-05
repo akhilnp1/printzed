@@ -4,8 +4,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-change-this-in-production-xyz123'
 
-DEBUG = False
-# DEBUG = True
+# DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = [
@@ -87,3 +87,21 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+import cloudinary
+import cloudinary_storage
+
+INSTALLED_APPS += [
+    'cloudinary_storage',
+    'cloudinary',
+]
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'Root',
+    'API_KEY': '792111113633339',
+    'API_SECRET': 'zctdZGWMP2XdqTbaKdKJoq4oZfs',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
