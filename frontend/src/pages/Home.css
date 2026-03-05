@@ -34,21 +34,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
-/* .deliver-card {
-  background: #1a1a1a;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-}
-.deliver-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-}
-.deliver-card-info {
-  padding: 14px 16px 18px;
-} */
+
 
  .deliver-card {
   background: #1a1a1a;
@@ -292,23 +278,7 @@
   width: 285px;
   height: 360px;
 }
-/* .creative-images {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  position: relative;
-  z-index: 1;
-  margin-top: -60px;
-  padding-bottom: 40px;
-}
-.cimg {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-.center-cimg { height: 360px; margin-top: -30px; }
-.last-cimg { height: 260px; } */
+
 
 /* ── COO / TEAM ── */
 .section-h2 { font-size: 26px; font-weight: 800; color: #fff; margin-bottom: 32px; }

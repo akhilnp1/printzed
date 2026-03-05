@@ -18,10 +18,7 @@ import creative2 from '../assets/creative_2.png';
 import creative3 from '../assets/creative_3.jpg';
 import creative4 from '../assets/creative_4.jpg';
 import cooPhoto from '../assets/coo_photo.jpg';
-// import team1 from '../assets/team_member1.jpg';
-// import team2 from '../assets/team_member2.jpg';
-// import team3 from '../assets/team_member3.jpg';
-// import team4 from '../assets/team_member4.jpg';
+
 import reviewAvatar from '../assets/review_avatar.jpg';
 import svcPrinting from '../assets/svc_printing.jpg';
 import svcBranding from '../assets/svc_branding.jpg';
